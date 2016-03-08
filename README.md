@@ -8,6 +8,6 @@ Core Clinical Data Warehouse (CDW) library providing a collection of utilities t
 2. Time and date conversion functions
 3. Configuration parser
 4. Log handler
-5. Modules to make native (linux) system commands
+5. Modules to make native (linux) system calls
 
 ----
