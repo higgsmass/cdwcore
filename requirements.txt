@@ -1,0 +1,4 @@
+cx_Oracle
+psycopg2
+dh-virtualenv
+mock

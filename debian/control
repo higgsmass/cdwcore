@@ -1,0 +1,12 @@
+Source: cdwcore
+Maintainer: Venkat Kaushik <venkatesh.kaushik@emc.com>
+Section: python
+Priority: optional
+Build-Depends: python, python-dev, dh-virtualenv, debhelper (>= 9)
+Standards-Version: 3.9.5
+
+Package: cdwcore
+Architecture: any
+Depends: ${misc:Depends}, ${python:Depends}
+Description: Characterization & Data Quality of CDW, CDM and i2b2 data at HSSC
+
