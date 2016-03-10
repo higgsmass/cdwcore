@@ -9,16 +9,17 @@
 import cx_Oracle as cx
 import base64
 import getpass
+import sys
 
 def authdb():
-    return base64.b64encode(getpass.unix_getpass())
+    return base64.b64encode(getpass.getpass('Password: ', sys.stderr))
 
 #-----------------------------------------------------------
 # open a db connection
 def oradb(dsn, u, p=None):
     db_handle = None
     try:
-        print 'Authenticating user \'%s\' for \"%s\"' % (u, dsn)
+        sys.stderr.write('Authenticating user \'%s\' for \"%s\"\n' % (u, dsn))
         passwd = authdb()
         if passwd == None:
             db_handle = cx.connect(dsn=dsn, user=u)
